@@ -1,0 +1,860 @@
+Request method:	POST
+Request URI:	https://restful-booker.herokuapp.com/booking
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "firstname": "Su",
+    "lastname": "Ran",
+    "totalprice": 3782,
+    "depositpaid": true,
+    "bookingdates": {
+        "checkin": "2024-11-08",
+        "checkout": "2024-11-11"
+    },
+    "additionalneeds": "cooktail+lunch"
+}
+HTTP/1.1 200 OK
+Server: Cowboy
+Report-To: {"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1730988464&sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&s=jW%2BVBDygpQU%2FY4HxMahJajc37sNCPfkuDYbMOMnMM0A%3D"}]}
+Reporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1730988464&sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&s=jW%2BVBDygpQU%2FY4HxMahJajc37sNCPfkuDYbMOMnMM0A%3D
+Nel: {"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}
+Connection: keep-alive
+X-Powered-By: Express
+Content-Type: application/json; charset=utf-8
+Content-Length: 200
+Etag: W/"c8-VkbLffanuTFNg5kdVSdrGuyIeBk"
+Date: Thu, 07 Nov 2024 14:07:44 GMT
+Via: 1.1 vegur
+
+{
+    "bookingid": 3373,
+    "booking": {
+        "firstname": "Su",
+        "lastname": "Ran",
+        "totalprice": 3782,
+        "depositpaid": true,
+        "bookingdates": {
+            "checkin": "2024-11-08",
+            "checkout": "2024-11-11"
+        },
+        "additionalneeds": "cooktail+lunch"
+    }
+}
+Request method:	GET
+Request URI:	https://restful-booker.herokuapp.com/booking/3373
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 200 OK
+Server: Cowboy
+Report-To: {"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1730988465&sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&s=aLOCbtnSV5y5mfBpXuHf1I20DpD6gMpGSmPwucNvE18%3D"}]}
+Reporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1730988465&sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&s=aLOCbtnSV5y5mfBpXuHf1I20DpD6gMpGSmPwucNvE18%3D
+Nel: {"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}
+Connection: keep-alive
+X-Powered-By: Express
+Content-Type: application/json; charset=utf-8
+Content-Length: 171
+Etag: W/"ab-k/Oesvw/+wRFxAqSGPLo1vcOA4U"
+Date: Thu, 07 Nov 2024 14:07:45 GMT
+Via: 1.1 vegur
+
+{
+    "firstname": "Su",
+    "lastname": "Ran",
+    "totalprice": 3782,
+    "depositpaid": true,
+    "bookingdates": {
+        "checkin": "2024-11-08",
+        "checkout": "2024-11-11"
+    },
+    "additionalneeds": "cooktail+lunch"
+}
+Request method:	POST
+Request URI:	https://restful-booker.herokuapp.com/booking
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "lastname": "last1",
+    "totalprice": 3782,
+    "depositpaid": true,
+    "bookingdates": {
+        "checkin": "2024-11-08",
+        "checkout": "2024-11-11"
+    },
+    "additionalneeds": "cooktail+lunch"
+}
+HTTP/1.1 500 Internal Server Error
+Server: Cowboy
+Report-To: {"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1730988467&sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&s=HpCmW8Wbt49dNHvhgBP8dALpcsF5aVjJISm6M2lroNI%3D"}]}
+Reporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1730988467&sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&s=HpCmW8Wbt49dNHvhgBP8dALpcsF5aVjJISm6M2lroNI%3D
+Nel: {"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}
+Connection: keep-alive
+X-Powered-By: Express
+Content-Type: text/plain; charset=utf-8
+Content-Length: 21
+Etag: W/"15-/6VXivhc2MKdLfIkLcUE47K6aH0"
+Date: Thu, 07 Nov 2024 14:07:47 GMT
+Via: 1.1 vegur
+
+Internal Server Error
+Request method:	POST
+Request URI:	https://restful-booker.herokuapp.com/booking
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "firstname": "qwertyuiopasdfghjklzxcvbnm",
+    "lastname": "last2",
+    "totalprice": 3782,
+    "depositpaid": true,
+    "bookingdates": {
+        "checkin": "2024-11-08",
+        "checkout": "2024-11-11"
+    },
+    "additionalneeds": "cooktail+lunch"
+}
+HTTP/1.1 200 OK
+Server: Cowboy
+Report-To: {"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1730988468&sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&s=k2tuTRkMdjaAcZnHxXiavEdd%2BHA%2Fv0CH8GA8cH7usGU%3D"}]}
+Reporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1730988468&sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&s=k2tuTRkMdjaAcZnHxXiavEdd%2BHA%2Fv0CH8GA8cH7usGU%3D
+Nel: {"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}
+Connection: keep-alive
+X-Powered-By: Express
+Content-Type: application/json; charset=utf-8
+Content-Length: 226
+Etag: W/"e2-+OTeT17Sni9fxOpGFAVHIve43tI"
+Date: Thu, 07 Nov 2024 14:07:48 GMT
+Via: 1.1 vegur
+
+{
+    "bookingid": 3413,
+    "booking": {
+        "firstname": "qwertyuiopasdfghjklzxcvbnm",
+        "lastname": "last2",
+        "totalprice": 3782,
+        "depositpaid": true,
+        "bookingdates": {
+            "checkin": "2024-11-08",
+            "checkout": "2024-11-11"
+        },
+        "additionalneeds": "cooktail+lunch"
+    }
+}
+Request method:	GET
+Request URI:	https://restful-booker.herokuapp.com/booking/3413
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 200 OK
+Server: Cowboy
+Report-To: {"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1730988470&sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&s=rpPuFj9E9OrJz76EDw%2BbxVTa2OvivowXGfBNTB4znss%3D"}]}
+Reporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1730988470&sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&s=rpPuFj9E9OrJz76EDw%2BbxVTa2OvivowXGfBNTB4znss%3D
+Nel: {"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}
+Connection: keep-alive
+X-Powered-By: Express
+Content-Type: application/json; charset=utf-8
+Content-Length: 197
+Etag: W/"c5-p3vBSoMcS2oQM7v06ZjIsRCcZqU"
+Date: Thu, 07 Nov 2024 14:07:50 GMT
+Via: 1.1 vegur
+
+{
+    "firstname": "qwertyuiopasdfghjklzxcvbnm",
+    "lastname": "last2",
+    "totalprice": 3782,
+    "depositpaid": true,
+    "bookingdates": {
+        "checkin": "2024-11-08",
+        "checkout": "2024-11-11"
+    },
+    "additionalneeds": "cooktail+lunch"
+}
+Request method:	POST
+Request URI:	https://restful-booker.herokuapp.com/booking
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "firstname": "Nhâất",
+    "lastname": "last3",
+    "totalprice": 3782,
+    "depositpaid": true,
+    "bookingdates": {
+        "checkin": "2024-11-08",
+        "checkout": "2024-11-11"
+    },
+    "additionalneeds": "cooktail+lunch"
+}
+HTTP/1.1 200 OK
+Server: Cowboy
+Report-To: {"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1730988472&sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&s=xf0E7LLNr0zOmcJV06Ge%2FRno6vT7eC5ORWM3nV6ZgcM%3D"}]}
+Reporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1730988472&sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&s=xf0E7LLNr0zOmcJV06Ge%2FRno6vT7eC5ORWM3nV6ZgcM%3D
+Nel: {"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}
+Connection: keep-alive
+X-Powered-By: Express
+Content-Type: application/json; charset=utf-8
+Content-Length: 208
+Etag: W/"d0-zTuD0irw4sYIV6kJMyy0hylBTb4"
+Date: Thu, 07 Nov 2024 14:07:52 GMT
+Via: 1.1 vegur
+
+{
+    "bookingid": 3444,
+    "booking": {
+        "firstname": "Nhâất",
+        "lastname": "last3",
+        "totalprice": 3782,
+        "depositpaid": true,
+        "bookingdates": {
+            "checkin": "2024-11-08",
+            "checkout": "2024-11-11"
+        },
+        "additionalneeds": "cooktail+lunch"
+    }
+}
+Request method:	GET
+Request URI:	https://restful-booker.herokuapp.com/booking/3444
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 200 OK
+Server: Cowboy
+Report-To: {"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1730988474&sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&s=5tgnT8QZT01sFgBvPoqsSw0lB3pbbeP6%2BbBIzszzjAQ%3D"}]}
+Reporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1730988474&sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&s=5tgnT8QZT01sFgBvPoqsSw0lB3pbbeP6%2BbBIzszzjAQ%3D
+Nel: {"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}
+Connection: keep-alive
+X-Powered-By: Express
+Content-Type: application/json; charset=utf-8
+Content-Length: 179
+Etag: W/"b3-Y7mZ7EqzTRc5k0JHBKgg5umg670"
+Date: Thu, 07 Nov 2024 14:07:54 GMT
+Via: 1.1 vegur
+
+{
+    "firstname": "Nhâất",
+    "lastname": "last3",
+    "totalprice": 3782,
+    "depositpaid": true,
+    "bookingdates": {
+        "checkin": "2024-11-08",
+        "checkout": "2024-11-11"
+    },
+    "additionalneeds": "cooktail+lunch"
+}
+Request method:	POST
+Request URI:	https://restful-booker.herokuapp.com/booking
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "firstname": "N!@#$%^&*({}",
+    "lastname": "last4",
+    "totalprice": 3782,
+    "depositpaid": true,
+    "bookingdates": {
+        "checkin": "2024-11-08",
+        "checkout": "2024-11-09"
+    },
+    "additionalneeds": "cooktail+lunch"
+}
+HTTP/1.1 200 OK
+Server: Cowboy
+Report-To: {"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1730988475&sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&s=642fkhXakOWU4avFOLFE3VMJsgh8QnrIfveBqlironE%3D"}]}
+Reporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1730988475&sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&s=642fkhXakOWU4avFOLFE3VMJsgh8QnrIfveBqlironE%3D
+Nel: {"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}
+Connection: keep-alive
+X-Powered-By: Express
+Content-Type: application/json; charset=utf-8
+Content-Length: 212
+Etag: W/"d4-TMiNUBQ+lVXVHLMKaGWvQlsVDqI"
+Date: Thu, 07 Nov 2024 14:07:55 GMT
+Via: 1.1 vegur
+
+{
+    "bookingid": 3472,
+    "booking": {
+        "firstname": "N!@#$%^&*({}",
+        "lastname": "last4",
+        "totalprice": 3782,
+        "depositpaid": true,
+        "bookingdates": {
+            "checkin": "2024-11-08",
+            "checkout": "2024-11-09"
+        },
+        "additionalneeds": "cooktail+lunch"
+    }
+}
+Request method:	GET
+Request URI:	https://restful-booker.herokuapp.com/booking/3472
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 200 OK
+Server: Cowboy
+Report-To: {"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1730988476&sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&s=yFkZphAtJpjzyMF3gV0t5EXtElnkbnguks6h5jnZkO8%3D"}]}
+Reporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1730988476&sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&s=yFkZphAtJpjzyMF3gV0t5EXtElnkbnguks6h5jnZkO8%3D
+Nel: {"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}
+Connection: keep-alive
+X-Powered-By: Express
+Content-Type: application/json; charset=utf-8
+Content-Length: 183
+Etag: W/"b7-xtSQiyrHv/YE9PJsXATuwUOgLx4"
+Date: Thu, 07 Nov 2024 14:07:56 GMT
+Via: 1.1 vegur
+
+{
+    "firstname": "N!@#$%^&*({}",
+    "lastname": "last4",
+    "totalprice": 3782,
+    "depositpaid": true,
+    "bookingdates": {
+        "checkin": "2024-11-08",
+        "checkout": "2024-11-09"
+    },
+    "additionalneeds": "cooktail+lunch"
+}
+Request method:	POST
+Request URI:	https://restful-booker.herokuapp.com/booking
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "firstname": "",
+    "lastname": "last5",
+    "totalprice": 3782,
+    "depositpaid": true,
+    "bookingdates": {
+        "checkin": "2024-11-08",
+        "checkout": "2024-11-09"
+    },
+    "additionalneeds": "cooktail+lunch"
+}
+HTTP/1.1 200 OK
+Server: Cowboy
+Report-To: {"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1730988478&sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&s=O%2BD6fJ40KhSPFY7vYeoJG9e1scw1lAL7Vt7fxQyB8rI%3D"}]}
+Reporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1730988478&sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&s=O%2BD6fJ40KhSPFY7vYeoJG9e1scw1lAL7Vt7fxQyB8rI%3D
+Nel: {"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}
+Connection: keep-alive
+X-Powered-By: Express
+Content-Type: application/json; charset=utf-8
+Content-Length: 200
+Etag: W/"c8-hAGiOwpbQ0pqbtV46QfeaMQRIkE"
+Date: Thu, 07 Nov 2024 14:07:58 GMT
+Via: 1.1 vegur
+
+{
+    "bookingid": 3498,
+    "booking": {
+        "firstname": "",
+        "lastname": "last5",
+        "totalprice": 3782,
+        "depositpaid": true,
+        "bookingdates": {
+            "checkin": "2024-11-08",
+            "checkout": "2024-11-09"
+        },
+        "additionalneeds": "cooktail+lunch"
+    }
+}
+Request method:	GET
+Request URI:	https://restful-booker.herokuapp.com/booking/3498
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 200 OK
+Server: Cowboy
+Report-To: {"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1730988479&sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&s=uLFD3qjIwmtUxLDpVBOrgyzCu9mAtZ4xXAnbqSyRaD8%3D"}]}
+Reporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1730988479&sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&s=uLFD3qjIwmtUxLDpVBOrgyzCu9mAtZ4xXAnbqSyRaD8%3D
+Nel: {"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}
+Connection: keep-alive
+X-Powered-By: Express
+Content-Type: application/json; charset=utf-8
+Content-Length: 171
+Etag: W/"ab-iWVmBS4FhPtncf4yiaaLKe2QBcg"
+Date: Thu, 07 Nov 2024 14:07:59 GMT
+Via: 1.1 vegur
+
+{
+    "firstname": "",
+    "lastname": "last5",
+    "totalprice": 3782,
+    "depositpaid": true,
+    "bookingdates": {
+        "checkin": "2024-11-08",
+        "checkout": "2024-11-09"
+    },
+    "additionalneeds": "cooktail+lunch"
+}
+Request method:	POST
+Request URI:	https://restful-booker.herokuapp.com/booking
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "firstname": "first1",
+    "lastname": "",
+    "totalprice": 9090,
+    "depositpaid": true,
+    "bookingdates": {
+        "checkin": "2024-11-08",
+        "checkout": "2024-11-10"
+    },
+    "additionalneeds": "breakfast"
+}
+HTTP/1.1 200 OK
+Server: Cowboy
+Report-To: {"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1730988481&sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&s=Y1wCYTfHeTbFj1OPVJPhZxVTIrCS5qdBx3HAUrO6aZ4%3D"}]}
+Reporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1730988481&sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&s=Y1wCYTfHeTbFj1OPVJPhZxVTIrCS5qdBx3HAUrO6aZ4%3D
+Nel: {"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}
+Connection: keep-alive
+X-Powered-By: Express
+Content-Type: application/json; charset=utf-8
+Content-Length: 196
+Etag: W/"c4-TTR7DqIYM0hrTM8bmEybK5GFm+s"
+Date: Thu, 07 Nov 2024 14:08:01 GMT
+Via: 1.1 vegur
+
+{
+    "bookingid": 3520,
+    "booking": {
+        "firstname": "first1",
+        "lastname": "",
+        "totalprice": 9090,
+        "depositpaid": true,
+        "bookingdates": {
+            "checkin": "2024-11-08",
+            "checkout": "2024-11-10"
+        },
+        "additionalneeds": "breakfast"
+    }
+}
+Request method:	GET
+Request URI:	https://restful-booker.herokuapp.com/booking/3520
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 200 OK
+Server: Cowboy
+Report-To: {"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1730988482&sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&s=eyad%2BTHjtEeiartYqt7Kn8LTl%2FDdWe48d9GG%2BX0DiJA%3D"}]}
+Reporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1730988482&sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&s=eyad%2BTHjtEeiartYqt7Kn8LTl%2FDdWe48d9GG%2BX0DiJA%3D
+Nel: {"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}
+Connection: keep-alive
+X-Powered-By: Express
+Content-Type: application/json; charset=utf-8
+Content-Length: 167
+Etag: W/"a7-83tfuuwq0fosTediRCaRAP23Scs"
+Date: Thu, 07 Nov 2024 14:08:02 GMT
+Via: 1.1 vegur
+
+{
+    "firstname": "first1",
+    "lastname": "",
+    "totalprice": 9090,
+    "depositpaid": true,
+    "bookingdates": {
+        "checkin": "2024-11-08",
+        "checkout": "2024-11-10"
+    },
+    "additionalneeds": "breakfast"
+}
+Request method:	POST
+Request URI:	https://restful-booker.herokuapp.com/booking
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "firstname": "first2",
+    "lastname": "qwertyuiopasdfghjklzxcvbnm",
+    "totalprice": 9090,
+    "depositpaid": true,
+    "bookingdates": {
+        "checkin": "2024-11-08",
+        "checkout": "2024-11-10"
+    },
+    "additionalneeds": "breakfast"
+}
+HTTP/1.1 200 OK
+Server: Cowboy
+Report-To: {"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1730988484&sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&s=FYSdfInu3%2FuHoVXkm8XCE1Tv44KhXCQuzpGC7tG%2FnQ4%3D"}]}
+Reporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1730988484&sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&s=FYSdfInu3%2FuHoVXkm8XCE1Tv44KhXCQuzpGC7tG%2FnQ4%3D
+Nel: {"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}
+Connection: keep-alive
+X-Powered-By: Express
+Content-Type: application/json; charset=utf-8
+Content-Length: 222
+Etag: W/"de-CIBxeDLKbI6OZNrUi/+AWCullVI"
+Date: Thu, 07 Nov 2024 14:08:04 GMT
+Via: 1.1 vegur
+
+{
+    "bookingid": 3549,
+    "booking": {
+        "firstname": "first2",
+        "lastname": "qwertyuiopasdfghjklzxcvbnm",
+        "totalprice": 9090,
+        "depositpaid": true,
+        "bookingdates": {
+            "checkin": "2024-11-08",
+            "checkout": "2024-11-10"
+        },
+        "additionalneeds": "breakfast"
+    }
+}
+Request method:	GET
+Request URI:	https://restful-booker.herokuapp.com/booking/3549
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 200 OK
+Server: Cowboy
+Report-To: {"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1730988485&sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&s=afT7HJ%2FORNPyU9aQdNfQWpSvWhJxlMLrbmo7bKbGqNQ%3D"}]}
+Reporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1730988485&sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&s=afT7HJ%2FORNPyU9aQdNfQWpSvWhJxlMLrbmo7bKbGqNQ%3D
+Nel: {"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}
+Connection: keep-alive
+X-Powered-By: Express
+Content-Type: application/json; charset=utf-8
+Content-Length: 193
+Etag: W/"c1-K1nEQgiwnumAy9qlTDm4pgRxYOQ"
+Date: Thu, 07 Nov 2024 14:08:05 GMT
+Via: 1.1 vegur
+
+{
+    "firstname": "first2",
+    "lastname": "qwertyuiopasdfghjklzxcvbnm",
+    "totalprice": 9090,
+    "depositpaid": true,
+    "bookingdates": {
+        "checkin": "2024-11-08",
+        "checkout": "2024-11-10"
+    },
+    "additionalneeds": "breakfast"
+}
+Request method:	POST
+Request URI:	https://restful-booker.herokuapp.com/booking
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "firstname": "first3",
+    "lastname": "Nhâất",
+    "totalprice": 9090,
+    "depositpaid": true,
+    "bookingdates": {
+        "checkin": "2024-11-08",
+        "checkout": "2024-11-11"
+    },
+    "additionalneeds": "breakfast"
+}
+HTTP/1.1 200 OK
+Server: Cowboy
+Report-To: {"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1730988487&sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&s=is3iEZXv5hxB043rOQRXD7tsq5CMHEfhBidk3Aq4yNs%3D"}]}
+Reporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1730988487&sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&s=is3iEZXv5hxB043rOQRXD7tsq5CMHEfhBidk3Aq4yNs%3D
+Nel: {"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}
+Connection: keep-alive
+X-Powered-By: Express
+Content-Type: application/json; charset=utf-8
+Content-Length: 204
+Etag: W/"cc-u0Hg4CKQlP2Tu5eyO8ZfWgb4LUo"
+Date: Thu, 07 Nov 2024 14:08:07 GMT
+Via: 1.1 vegur
+
+{
+    "bookingid": 3574,
+    "booking": {
+        "firstname": "first3",
+        "lastname": "Nhâất",
+        "totalprice": 9090,
+        "depositpaid": true,
+        "bookingdates": {
+            "checkin": "2024-11-08",
+            "checkout": "2024-11-11"
+        },
+        "additionalneeds": "breakfast"
+    }
+}
+Request method:	GET
+Request URI:	https://restful-booker.herokuapp.com/booking/3574
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 200 OK
+Server: Cowboy
+Report-To: {"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1730988488&sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&s=0%2BcNM8TjkJt2qWUyrM0YpRNMNteh8OQLPBgiMCS0TeM%3D"}]}
+Reporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1730988488&sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&s=0%2BcNM8TjkJt2qWUyrM0YpRNMNteh8OQLPBgiMCS0TeM%3D
+Nel: {"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}
+Connection: keep-alive
+X-Powered-By: Express
+Content-Type: application/json; charset=utf-8
+Content-Length: 175
+Etag: W/"af-bFwqYK9jm/onzaf8otpkzyzWMOU"
+Date: Thu, 07 Nov 2024 14:08:08 GMT
+Via: 1.1 vegur
+
+{
+    "firstname": "first3",
+    "lastname": "Nhâất",
+    "totalprice": 9090,
+    "depositpaid": true,
+    "bookingdates": {
+        "checkin": "2024-11-08",
+        "checkout": "2024-11-11"
+    },
+    "additionalneeds": "breakfast"
+}
+Request method:	POST
+Request URI:	https://restful-booker.herokuapp.com/booking
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "firstname": "first4",
+    "lastname": "N!@#$%^&*({}",
+    "totalprice": 9090,
+    "depositpaid": true,
+    "bookingdates": {
+        "checkin": "2024-11-08",
+        "checkout": "2024-11-10"
+    },
+    "additionalneeds": "breakfast"
+}
+HTTP/1.1 200 OK
+Server: Cowboy
+Report-To: {"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1730988490&sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&s=jIWsuBMfxFn5mtX%2F%2Ba3sC7X8Ch3P0ytEwFis7Yv1NVg%3D"}]}
+Reporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1730988490&sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&s=jIWsuBMfxFn5mtX%2F%2Ba3sC7X8Ch3P0ytEwFis7Yv1NVg%3D
+Nel: {"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}
+Connection: keep-alive
+X-Powered-By: Express
+Content-Type: application/json; charset=utf-8
+Content-Length: 208
+Etag: W/"d0-6ea2yCUSP8pdIfYlVCe6kHoEtAo"
+Date: Thu, 07 Nov 2024 14:08:10 GMT
+Via: 1.1 vegur
+
+{
+    "bookingid": 3602,
+    "booking": {
+        "firstname": "first4",
+        "lastname": "N!@#$%^&*({}",
+        "totalprice": 9090,
+        "depositpaid": true,
+        "bookingdates": {
+            "checkin": "2024-11-08",
+            "checkout": "2024-11-10"
+        },
+        "additionalneeds": "breakfast"
+    }
+}
+Request method:	GET
+Request URI:	https://restful-booker.herokuapp.com/booking/3602
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 200 OK
+Server: Cowboy
+Report-To: {"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1730988491&sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&s=eWtg04CYIVSPZsWO4ZzvNsWZdo66scf4RugrYcQG2XI%3D"}]}
+Reporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1730988491&sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&s=eWtg04CYIVSPZsWO4ZzvNsWZdo66scf4RugrYcQG2XI%3D
+Nel: {"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}
+Connection: keep-alive
+X-Powered-By: Express
+Content-Type: application/json; charset=utf-8
+Content-Length: 179
+Etag: W/"b3-c1dViPgIYt2DD1leq00SZIY6KZQ"
+Date: Thu, 07 Nov 2024 14:08:11 GMT
+Via: 1.1 vegur
+
+{
+    "firstname": "first4",
+    "lastname": "N!@#$%^&*({}",
+    "totalprice": 9090,
+    "depositpaid": true,
+    "bookingdates": {
+        "checkin": "2024-11-08",
+        "checkout": "2024-11-10"
+    },
+    "additionalneeds": "breakfast"
+}
+Request method:	POST
+Request URI:	https://restful-booker.herokuapp.com/booking
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "firstname": "June",
+    "lastname": "Junly",
+    "totalprice": 908,
+    "depositpaid": true,
+    "bookingdates": {
+        "checkin": "2024-11-08",
+        "checkout": "2024-11-10"
+    },
+    "additionalneeds": "breakfast"
+}
+HTTP/1.1 200 OK
+Server: Cowboy
+Report-To: {"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1730988493&sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&s=yjcoul09Vv8zUifpJMewHCqdFJcCZY041oD2xn52Z18%3D"}]}
+Reporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1730988493&sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&s=yjcoul09Vv8zUifpJMewHCqdFJcCZY041oD2xn52Z18%3D
+Nel: {"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}
+Connection: keep-alive
+X-Powered-By: Express
+Content-Type: application/json; charset=utf-8
+Content-Length: 198
+Etag: W/"c6-hPz160yvhRIA+LRQU7K9iDsEgrM"
+Date: Thu, 07 Nov 2024 14:08:13 GMT
+Via: 1.1 vegur
+
+{
+    "bookingid": 3623,
+    "booking": {
+        "firstname": "June",
+        "lastname": "Junly",
+        "totalprice": 908,
+        "depositpaid": true,
+        "bookingdates": {
+            "checkin": "2024-11-08",
+            "checkout": "2024-11-10"
+        },
+        "additionalneeds": "breakfast"
+    }
+}
