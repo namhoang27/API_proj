@@ -31,17 +31,16 @@ pipeline {
                 }
             }
         }
-        stage('Publish Reports') {
-            steps {
-                // Đảm bảo cấu hình để Maven sinh ra báo cáo
-                publishHTML(target:[
-                reportDir: 'target/cucumber-html-reports',
-                reportFiles: 'overview-features.html',
-                reportName: 'Cucumber HTML Report'])
-            }
-        }
     }
     post {
+        always {
+            // Archive the generated HTML report in Jenkins
+            publishHTML (target: [
+                reportDir: 'target/cucumber-html-reports',
+                reportFiles: 'overview-features.html',
+                reportName: 'Cucumber HTML Report'
+            ])
+        }
         success {
             echo 'Build và kiểm thử thành công!'
         }
