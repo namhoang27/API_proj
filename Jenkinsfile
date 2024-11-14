@@ -2,7 +2,7 @@ pipeline {
     agent any
     
     tools {
-        maven 'Maven 3.9.9' // Đặt đúng version Maven đã cài trong Jenkins
+        maven '3.9.9' // Đặt đúng version Maven đã cài trong Jenkins
     }
 
     environment {
