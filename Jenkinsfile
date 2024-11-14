@@ -36,6 +36,9 @@ pipeline {
         always {
             // Archive the generated HTML report in Jenkins
             publishHTML (target: [
+                            allowMissing: false,
+            alwaysLinkToLastBuild: false,  // Thiết lập `false` để lưu báo cáo cho từng bản build
+            keepAll: true,    
                 reportDir: 'target/cucumber-reports/cucumber-html-reports',
                 reportFiles: 'overview-features.html',
                 reportName: 'Cucumber HTML Report'
