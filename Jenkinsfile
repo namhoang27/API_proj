@@ -36,7 +36,7 @@ pipeline {
         always {
             // Archive the generated HTML report in Jenkins
             publishHTML (target: [
-                reportDir: 'target/cucumber-html-reports',
+                reportDir: 'target/cucumber-reports/cucumber-html-reports',
                 reportFiles: 'overview-features.html',
                 reportName: 'Cucumber HTML Report'
             ])
