@@ -23,15 +23,21 @@ pipeline {
                 sh 'mvn clean verify'
             }
         }
+        stage('Generate Cucumber HTML Report') {
+            steps {
+                script {
+                    // Run Maven goal to generate the HTML report
+                    sh 'mvn verify -DskipTests=true'
+                }
+            }
+        }
         stage('Publish Reports') {
             steps {
                 // Đảm bảo cấu hình để Maven sinh ra báo cáo
-                publishHTML([allowMissing: false,
-                             alwaysLinkToLastBuild: true,
-                             keepAll: true,
-                             reportDir: 'target/cucumber-reports/cucumber-html-reports/',
-                             reportFiles: 'report-feature_1626635988.html',
-                             reportName: 'HTML Report'])
+                publishHTML(target:[
+                reportDir: 'target/cucumber-html-reports',
+                reportFiles: 'overview-features.html',
+                reportName: 'Cucumber HTML Report'])
             }
         }
     }
